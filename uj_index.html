@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pohánka & Társa Kft. - Új Dizájn</title>
+    
+    <!-- A Chrome-os dizájn stíluslapjai -->
+    <link rel="stylesheet" href="Google minta a Weboldal stílusa és témája/main_io.min.cc8784f86a6b.css">
+    <link rel="stylesheet" href="Google minta a Weboldal stílusa és témája/index.min.03a4570bab8d.css">
+    <link rel="stylesheet" href="style.css"> <!-- Az eredeti stíluslapunk, finomhangoláshoz -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- A Chrome oldal által használt betűtípusok, kiegészítve az Inter-rel -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Néhány extra stílus a jobb integrációért */
+        body {
+            font-family: 'Roboto', 'Inter', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #202124;
+            margin-bottom: 1.5rem;
+        }
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #5f6368;
+            max-width: 700px;
+            margin: 0 auto 2.5rem auto;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 1000px; /* rounded corner */
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .cta-button:hover {
+            background-color: #185abc;
+            box-shadow: 0 7px 14px rgba(0,0,0,0.1);
+        }
+        .services-section {
+            padding: 5rem 2rem;
+            background-color: #ffffff;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--dark-text);
+            margin-bottom: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- A te oldalad navigációja, egyszerűsítve -->
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">Pohánka & Társa Kft.</div>
+            <ul>
+                <li><a href="#services">Amit Kínálunk</a></li>
+                <li><a href="#references">Munkáink</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero szekció a te tartalmaddal, de a Chrome dizájn stílusában -->
+        <section class="hero-section">
+            <h1 class="hero-title" data-translate-key="heroTitle">
+                Professzionális Technológiai Megoldások <span style="color: #1a73e8;">Mindenki Számára</span> Személyre Szabva
+            </h1>
+            <p class="hero-subtitle" data-translate-key="heroParagraph">
+                Modern technológiákkal és szakértő csapatunkkal segítjük elérni üzleti céljait. Ismerje meg innovatív <strong>technológiai megoldásainkat</strong>, <strong>szoftverfejlesztési</strong> és <strong>marketing stratégiáinkat</strong>, amelyekkel sikeressé tehetjük vállalkozását!
+            </p>
+            <a href="#services" class="cta-button">Ismerje meg szolgáltatásainkat</a>
+        </section>
+
+        <!-- Szolgáltatások szekció a te kártyáiddal, de az új dizájnnal -->
+        <section id="services" class="services-section">
+            <h2 class="section-title" data-translate-key="servicesTitle">Amit Kínálunk</h2>
+            <div class="card-container">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="card-icon">💼</div>
+                    <h3 data-translate-key="package2Title">Vállalkozás fejlesztés</h3>
+                    <p data-translate-key="package2Desc">Skálázható megoldások a vállalkozás növekedéséhez AI & Automatizációval és Digitális Tanácsadással.</p>
+                    <a href="csomag2.html" class="details-button">Részletek</a>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="card-icon">🌐</div>
+                    <h3 data-translate-key="package4Title">Weboldal és Alkalmazás Készítés</h3>
+                    <p data-translate-key="package4Desc">Egyedi online jelenlét és kisebb digitális megoldások, az Ön igényeire szabva.</p>
+                    <a href="csomag4.html" class="details-button">Részletek</a>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="card-icon">🚀</div>
+                    <h3 data-translate-key="package8Title">Kereskedelem & Fuvarszervezés</h3>
+                    <p data-translate-key="package8Desc">Komplett kereskedelmi kapcsolat kiépítése és a teljes logisztikai folyamat lebonyolítása.</p>
+                    <a href="csomag8.html" class="details-button">Részletek</a>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="card-icon">📈</div>
+                    <h3 data-translate-key="package6Title">Marketing Stratégia</h3>
+                    <p data-translate-key="package6Desc">Hatékony online jelenlét és ügyfélszerzés adatvezérelt hirdetési stratégiákkal.</p>
+                    <a href="csomag6.html" class="details-button">Részletek</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Pohánka & Társa Kft. Minden jog fenntartva.</p>
+        <p style="font-size: 0.8rem; color: #9aa0a6;">Design inspiráció: Google Chrome & AI.Google</p>
+    </footer>
+</body>
+</html>
