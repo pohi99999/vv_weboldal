@@ -1,6 +1,8 @@
 // script.js - Interaktív funkciók az új Pohánka & Társa weboldalhoz
 
-document.addEventListener('DOMContentLoaded', () => {
+import { initHeroParticles } from './particles/heroParticles.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
 
     // Mobil menü kezelése
     const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -58,6 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.toggle('is-flipped');
         });
     });
+    try {
+        await initHeroParticles();
+    } catch (error) {
+        console.error('A hero részecske rendszer inicializálása sikertelen:', error);
+    }
 
 
     console.log("Pohánka & Társa Kft. - Új weboldal inicializálva, fejlett animációk aktívak.");
