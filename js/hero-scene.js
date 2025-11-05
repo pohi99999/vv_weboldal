@@ -10,7 +10,7 @@ if (!heroSection) {
     console.warn('hero-scene: nem található hero szekció, a Three.js effekt nem inicializálható.');
 } else {
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.outputEncoding = THREE.sRGBEncoding;
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.08;
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
